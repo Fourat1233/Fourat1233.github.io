@@ -215,13 +215,21 @@
 }
 
 .custom-logo-link img {
-    max-width: 200px;
+    width: 140px !important;
+    padding-bottom: 8px !important;
+    margin-right: 100px !important;
     -webkit-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
 }
 
 .is-sticky .custom-logo-link img {
-    max-width: 150px;
+    width: 110px !important;
+    margin-right: 100px !important;
+    padding-bottom: 8px !important;
+
+    padding-right: 30px;
+    padding-bottom: 8px;
+    margin-right: 60px;
 }
 
 ul#nav {
@@ -346,7 +354,7 @@ ul#nav li ul a:hover {
 .stellarnav li li.has-sub > a::after {
     margin-left: 0;
     position: absolute;
-    right: 10px;
+    right: 1px;
 }
 
 .stellarnav li.drop-left li.has-sub > a::after {
@@ -361,10 +369,10 @@ ul#nav li ul a:hover {
 ----------------------------*/
 
 ul#nav li > a::after {
-    background: #ffffff none repeat scroll 0 0;
+    background: #4431a7 none repeat scroll 0 0;
     bottom: 0;
     content: "";
-    height: 3px;
+    height: 2px;
     left: 0;
     position: absolute;
     -webkit-transition: all 0.3s ease 0s;
@@ -373,7 +381,7 @@ ul#nav li > a::after {
 }
 
 ul#nav li.active > a::after {
-    width: 100%;
+    width: 50%;
 }
 
 /*----------------------------
@@ -505,8 +513,11 @@ ul#nav li.active > a::after {
     }
 
     .custom-logo-link img {
-        max-width: 150px;
-    }
+        
+            width: 140px !important;
+            margin-right: 100px !important;  
+            padding-bottom: 8px !important;
+  }
 
     ul#nav {
         background: #ffffff none repeat scroll 0 0;
@@ -653,7 +664,8 @@ ul#nav li.active > a::after {
     }
 
     .custom-logo-link img {
-        max-width: 150px;
+            width: 140px !important;
+            margin-right: 100px  !important;
     }
 
     ul#nav {
