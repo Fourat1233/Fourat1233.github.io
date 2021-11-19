@@ -47,6 +47,12 @@ header {
     background: #ffffff none repeat scroll 0 0;
 }
 
+.blue-bg {
+   
+    background:  url("assets/img/background/blue_bg.png") repeat scroll 0 0;
+
+}
+
 .area-image-content,
 .area-content {
     position: relative;

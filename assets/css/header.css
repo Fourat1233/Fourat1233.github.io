@@ -594,7 +594,7 @@ ul#nav li.active > a::after {
 @media only screen and (max-width: 767px) {
 
     .mainmenu-area {
-        background: rgba(0, 0, 0, 0) linear-gradient(135deg, #584bfb 0%, #45aafd 99%) repeat scroll 0 0;
+        /* background: rgba(0, 0, 0, 0) linear-gradient(135deg, #584bfb 0%, #45aafd 99%) repeat scroll 0 0; */
     }
 
     .mainmenu-area svg {
@@ -606,11 +606,11 @@ ul#nav li.active > a::after {
 
     .menu-toggle.full,
     .navbar-header h3 a {
-        color: #ffffff !important;
+        /* color: #ffffff !important; */
     }
 
     .line {
-        stroke: #ffffff;
+        /* stroke: #ffffff; */
     }
 
     .is-sticky .line {
