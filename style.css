@@ -1140,7 +1140,7 @@ BOX HOVER 8
     10. WELCOME TEXT AREA
 ------------------------------*/
 .welcome-text-area .area-bg {
-    background:  url(assets/img/background/white.jpg) no-repeat scroll center center / 100% 100%;
+    background:  url(assets/img/background/testing.jpg) no-repeat scroll center center / 100% 100%;
     /*  */
 }
 
@@ -4111,4 +4111,5 @@ ul.products .product img {
 
 .big-logo {
     
+    width: 350% !important;
 }

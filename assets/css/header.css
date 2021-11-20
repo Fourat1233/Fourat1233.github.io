@@ -291,7 +291,7 @@ ul#nav li.hover > a,
 .is-sticky ul#nav li.hover > a,
 .is-sticky ul#nav li.current-menu-parent > a,
 .is-sticky ul#nav li.current-menu-item > a {
-    /*color: #5368fd;*/
+    color: #5368fd;
 }
 
 .is-sticky ul#nav li > a:hover,
@@ -381,7 +381,7 @@ ul#nav li > a::after {
 }
 
 ul#nav li.active > a::after {
-    width: 50%;
+    width: 80%;
 }
 
 /*----------------------------
