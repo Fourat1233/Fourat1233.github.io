@@ -4097,11 +4097,19 @@ ul.products .product img {
         opacity: 1;
         visibility: visible;
     }
+    .big-logo {
+    
+        max-width: 350% !important;
+    }
 }
 
 @media only screen and (max-width: 992px) {
     .cd-main-header.animate-search {
         display: none;
+    }
+    .big-logo {
+    
+        max-width: 150% !important;
     }
 }
 
@@ -4118,7 +4126,3 @@ ul.products .product img {
 
 
 
-.big-logo {
-    
-    width: 350% !important;
-}
