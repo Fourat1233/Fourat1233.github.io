@@ -1138,11 +1138,19 @@ BOX HOVER 8
 
 /*----------------------------
     10. WELCOME TEXT AREA
-------------------------------*/
+------------------------------*/ 
+@media only screen and (min-width: 1000px)  {
 .welcome-text-area .area-bg {
+  
     background:  url(assets/img/background/testing.jpg) no-repeat scroll center center / 100% 100%;
-    /*  */
+    }
 }
+@media only screen and (max-width: 767px)  {
+    .welcome-text-area .area-bg {
+      
+        background:  url(assets/img/background/white.jpg) no-repeat scroll center center / 100% 100%;
+        }
+    }
 
 .welcome-area {
     -webkit-box-align: end;
