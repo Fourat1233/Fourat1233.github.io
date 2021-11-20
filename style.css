@@ -1139,7 +1139,7 @@ BOX HOVER 8
 /*----------------------------
     10. WELCOME TEXT AREA
 ------------------------------*/ 
-@media only screen and (min-width: 1000px)  {
+@media only screen and (min-width: 768px)  {
 .welcome-text-area .area-bg {
   
     background:  url(assets/img/background/testing.jpg) no-repeat scroll center center / 100% 100%;
