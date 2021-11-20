@@ -37,6 +37,10 @@ Version: 2.0
 /*---------------------------
     1. THEME BG COLOR
 -----------------------------*/
+.bg-white {
+    background:  url("assets/img/background/white.jpg") repeat scroll 0 0;
+
+}
 .overflow-xhidden {
     overflow-x: hidden;
     overflow-y: inherit;
@@ -1228,6 +1232,7 @@ BOX HOVER 8
     .welcome-text h1 {
         /*font-size: 52px;*/
         font-size: 50px;
+        
     }
 }
 
@@ -4108,7 +4113,7 @@ ul.products .product img {
         display: none;
     }
     .big-logo {
-    
+
         max-width: 150% !important;
     }
 }
