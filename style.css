@@ -4133,12 +4133,15 @@ ul.products .product img {
     }
     .big-logo {
     
-        max-width: 300% !important;
+        max-width: 255% !important;
+        margin-left: 20px;
     }
     .slogan-text {
-        margin-left: 50px;
+
         color: blue; 
         font-size: 20px;
+        padding-bottom: 30px;
+        margin-right: 110px;
     }
 }
 
@@ -4206,8 +4209,8 @@ ul.products .product img {
 
 .ml15 {
     
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
-    font-size: 4em;
+    font-family: MarkOT-Heavy ;
+    font-size: 5em;
     text-transform: uppercase;
     letter-spacing: 0.1em;
 }
