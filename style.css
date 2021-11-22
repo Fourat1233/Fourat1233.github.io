@@ -34,6 +34,19 @@ Version: 2.0
     26. PRODUCT PAGE
     27. SINGE PRODUCT PAGE
 ----------------------------------------------------------------------------------------*/
+
+
+@font-face {
+    font-family: 'Atiba';
+    src: url('assets/fonts/Atiba.ttf');
+    }
+    
+    
+    @font-face {
+    font-family: 'Blair';
+    src: url('assets/fonts/blair_itc_medium1.ttf');
+    }
+
 /*---------------------------
     1. THEME BG COLOR
 -----------------------------*/
@@ -4104,28 +4117,30 @@ ul.products .product img {
     }
     .big-logo {
     
-        max-width: 350% !important;
+        max-width: 300% !important;
     }
     .slogan-text {
         margin-left: 50px;
-         color: blue; 
-         font-size: 50px;
+        color: blue; 
+        font-size: 20px;
     }
 }
 
 @media only screen and (max-width: 992px) {
+    .responsive-logo {
+        margin-left: 0 !important;
+    }
     .cd-main-header.animate-search {
         display: none;
     }
     .big-logo {
-
+        
         max-width: 150% !important;
     }
     .slogan-text {
         margin-left: 50px;
-         color: blue; 
-         font-size: 10px;
-         font-family:Arial, Helvetica, sans-serif  ;
+        color: blue; 
+        font-size: 10px;
     }
 }
 
@@ -4143,8 +4158,8 @@ ul.products .product img {
 
 .slogan-text {
     margin-left: 50px;
-     color: blue; 
-     font-family:cursive;
+    color: blue; 
+    font-family:Blair;
 }
 
 
