@@ -4178,4 +4178,34 @@ ul.products .product img {
     flex-direction: row-reverse;
 }
 
+.container-fluid {
+    padding: 0px 40px !important;
+}
+
+
+.ml2 {
+    float: right;
+    font-weight: 900;
+    font-size: 2em;
+    color: white;
+    }
+
+    .ml2 .letter {
+    display: inline-block;
+    line-height: 1em;
+    }
+
+
+.ml15 {
+    font-weight: bolder;
+    font-size: 3.8em;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+
+    }
+    
+    .ml15 .word {
+    display: inline-block;
+    line-height: 1em;
+    }
 
