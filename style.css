@@ -4160,6 +4160,8 @@ ul.products .product img {
     margin-left: 50px;
     color: blue; 
     font-family:Blair;
+    display: flex;
+    flex-direction: row-reverse;
 }
 
 
