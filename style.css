@@ -4184,10 +4184,12 @@ ul.products .product img {
 
 
 .ml2 {
-    float: right;
+    
     font-weight: 900;
     font-size: 2em;
     color: white;
+    line-height: 0.1em;
+
     }
 
     .ml2 .letter {
@@ -4198,7 +4200,8 @@ ul.products .product img {
 
 .ml15 {
     font-weight: bolder;
-    font-size: 3.8em;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 4em;
     text-transform: uppercase;
     letter-spacing: 0.1em;
 
@@ -4209,3 +4212,8 @@ ul.products .product img {
     line-height: 1em;
     }
 
+
+    .phone-icon {
+        max-width: 50px;
+        max-height: 50px ;
+    }
