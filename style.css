@@ -56,6 +56,12 @@ header {
     background:  url("assets/img/background/blue_bg.png") repeat scroll 0 0;
 
 }
+.map-bg {
+   
+    background:  url("assets/img/background/map.jpg") repeat scroll 0 0;
+
+}
+
 
 .area-image-content,
 .area-content {
@@ -4140,11 +4146,15 @@ ul.products .product img {
     margin-bottom: 0;
 }
 
+@media only screen and (max-width: 767px){
+.area-title h2 {
+    font-size: 28px;
+}}
 
 .slogan-text {
-    margin-left: 50px;
+    
      color: blue; 
-     font-family:cursive;
+     font-family: 'Gilroy';
 }
 
 
