@@ -67,7 +67,6 @@ jQuery(document).on('ready', function ($) {
         }
     });
    
-<<<<<<< HEAD
 
 
 
@@ -192,7 +191,6 @@ anime.timeline({loop: true})
     easing: "easeOutExpo",
     delay: 1000
   });
-=======
 // anime.timeline({loop: false})
 //   .add({
 //     targets: '.ml15 .word',
@@ -208,7 +206,6 @@ anime.timeline({loop: true})
 //     easing: "easeOutExpo",
 //     delay: 1000
 //   });
->>>>>>> e0bdabcececd621760e8074969ffc9ff86ac4af0
 
 
 
