@@ -67,23 +67,6 @@ jQuery(document).on('ready', function ($) {
         }
     });
    
-<<<<<<< HEAD
-    anime.timeline({loop: true})
-    .add({
-      targets: '.ml15 .word',
-      scale: [14,1],
-      opacity: [0,1],
-      easing: "easeOutCirc",
-      duration: 800,
-      delay: (el, i) => 800 * i
-    }).add({
-      targets: '.ml15',
-      opacity: 0,
-      duration: 1000,
-      easing: "easeOutExpo",
-      delay: 1000
-    });
-=======
 
 
 
@@ -225,7 +208,6 @@ anime.timeline({loop: true})
 //   });
 
 
->>>>>>> bc6365455fdf81c83e19aaa82cd2be203b7f1861
 
 var ml4 = {};
 ml4.opacityIn = [0,1];
