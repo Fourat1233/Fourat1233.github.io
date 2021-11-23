@@ -67,6 +67,7 @@ jQuery(document).on('ready', function ($) {
         }
     });
    
+    /*
     anime.timeline({loop: true})
     .add({
       targets: '.ml15 .word',
@@ -83,62 +84,9 @@ jQuery(document).on('ready', function ($) {
       delay: 1000
     });
 
+*/
 
 
-
-
-  //*********** */
-  var ml4 = {};
-ml4.opacityIn = [0,1];
-ml4.scaleIn = [0.2, 1];
-ml4.scaleOut = 3;
-ml4.durationIn = 800;
-ml4.durationOut = 600;
-ml4.delay = 500;
-
-anime.timeline({loop: true})
-  .add({
-    targets: '.ml4 .letters-1',
-    opacity: ml4.opacityIn,
-    scale: ml4.scaleIn,
-    duration: ml4.durationIn
-  }).add({
-    targets: '.ml4 .letters-1',
-    opacity: 0,
-    scale: ml4.scaleOut,
-    duration: ml4.durationOut,
-    easing: "easeInExpo",
-    delay: ml4.delay
-  }).add({
-    targets: '.ml4 .letters-2',
-    opacity: ml4.opacityIn,
-    scale: ml4.scaleIn,
-    duration: ml4.durationIn
-  }).add({
-    targets: '.ml4 .letters-2',
-    opacity: 0,
-    scale: ml4.scaleOut,
-    duration: ml4.durationOut,
-    easing: "easeInExpo",
-    delay: ml4.delay
-  }).add({
-    targets: '.ml4 .letters-3',
-    opacity: ml4.opacityIn,
-    scale: ml4.scaleIn,
-    duration: ml4.durationIn
-  }).add({
-    targets: '.ml4 .letters-3',
-    opacity: 0,
-    scale: ml4.scaleOut,
-    duration: ml4.durationOut,
-    easing: "easeInExpo",
-    delay: ml4.delay
-  }).add({
-    targets: '.ml4',
-    opacity: 0,
-    duration: 500,
-    delay: 700
-  });
 
    /*--------------- aNIMATION 2 -------------- */ 
    /*--------------------------------*/
@@ -188,7 +136,7 @@ anime.timeline({loop: true})
     });
 
 
-
+/*
 
 
     anime.timeline({loop: true})
@@ -206,6 +154,8 @@ anime.timeline({loop: true})
     easing: "easeOutExpo",
     delay: 1000
   });
+
+  */
 // anime.timeline({loop: false})
 //   .add({
 //     targets: '.ml15 .word',
@@ -231,7 +181,7 @@ ml4.scaleOut = 3;
 ml4.durationIn = 800;
 ml4.durationOut = 600;
 ml4.delay = 500;
-
+/*
 anime.timeline({loop: true})
   .add({
     targets: '.ml4 .letters-1',
@@ -275,6 +225,8 @@ anime.timeline({loop: true})
     duration: 500,
     delay: 500
   });
+
+  */
   /**** */
     var window_width = $(window).width();
     if (window_width > 900) {
@@ -929,3 +881,84 @@ jQuery(window).on('load', function () {
         itemSelector: '.single-portfolio'
     });
 });
+
+
+
+/*------------- 
+        Intersection handler 
+        *////////////
+
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        const square = entry.target.querySelector('.ml4-wrapper');
+      
+      
+      
+      
+
+  //*********** */
+  
+  var ml4 = {};
+  ml4.opacityIn = [0,1];
+  ml4.scaleIn = [0.2, 1];
+  ml4.scaleOut = 3;
+  ml4.durationIn = 800;
+  ml4.durationOut = 600;
+  ml4.delay = 500;
+  
+  anime.timeline({loop: false})
+    .add({
+      targets: '.ml4 .letters-1',
+      opacity: ml4.opacityIn,
+      scale: ml4.scaleIn,
+      duration: ml4.durationIn
+    }).add({
+      targets: '.ml4 .letters-1',
+      opacity: 0,
+      scale: ml4.scaleOut,
+      duration: ml4.durationOut,
+      easing: "easeInExpo",
+      delay: ml4.delay
+    }).add({
+      targets: '.ml4 .letters-2',
+      opacity: ml4.opacityIn,
+      scale: ml4.scaleIn,
+      duration: ml4.durationIn
+    }).add({
+      targets: '.ml4 .letters-2',
+      opacity: 0,
+      scale: ml4.scaleOut,
+      duration: ml4.durationOut,
+      easing: "easeInExpo",
+      delay: ml4.delay
+    }).add({
+      targets: '.ml4 .letters-3',
+      opacity: ml4.opacityIn,
+      scale: ml4.scaleIn,
+      duration: ml4.durationIn
+    });
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        // alert(square)
+        // if (entry.isIntersecting) {
+        // square.classList.add('adeInRight');
+        // return; // if we added the class, exit the function
+        // }
+    
+        // // We're not intersecting, so remove the class!
+        // square.classList.remove('fadeInRight');
+    });
+    });
+    
+    observer.observe(document.querySelector('.ml4'));
+
+
