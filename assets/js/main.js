@@ -66,25 +66,7 @@ jQuery(document).on('ready', function ($) {
             $scrollToTop.css("bottom", "20px");
         }
     });
-   
-    /*
-    anime.timeline({loop: true})
-    .add({
-      targets: '.ml15 .word',
-      scale: [14,1],
-      opacity: [0,1],
-      easing: "easeOutCirc",
-      duration: 800,
-      delay: (el, i) => 800 * i
-    }).add({
-      targets: '.ml15',
-      opacity: 0,
-      duration: 1000,
-      easing: "easeOutExpo",
-      delay: 1000
-    });
 
-*/
 
 
 
@@ -897,7 +879,7 @@ const observer = new IntersectionObserver(entries => {
       
 
   //*********** */
-  
+  if (entry.isIntersecting) {
   var ml4 = {};
   ml4.opacityIn = [0,1];
   ml4.scaleIn = [0.2, 1];
@@ -905,44 +887,26 @@ const observer = new IntersectionObserver(entries => {
   ml4.durationIn = 800;
   ml4.durationOut = 600;
   ml4.delay = 500;
-  
+ 
   anime.timeline({loop: false})
+  .add({
+    targets: '.ml4 .letters-2',
+    opacity: 0,
+  })
     .add({
       targets: '.ml4 .letters-1',
       opacity: ml4.opacityIn,
       scale: ml4.scaleIn,
       duration: ml4.durationIn
-    }).add({
-      targets: '.ml4 .letters-1',
-      opacity: 0,
-      scale: ml4.scaleOut,
-      duration: ml4.durationOut,
-      easing: "easeInExpo",
-      delay: ml4.delay
-    }).add({
+    })
+    .add({
       targets: '.ml4 .letters-2',
-      opacity: ml4.opacityIn,
+      opacity: 1,
       scale: ml4.scaleIn,
-      duration: ml4.durationIn
-    }).add({
-      targets: '.ml4 .letters-2',
-      opacity: 0,
-      scale: ml4.scaleOut,
-      duration: ml4.durationOut,
-      easing: "easeInExpo",
-      delay: ml4.delay
-    }).add({
-      targets: '.ml4 .letters-3',
-      opacity: ml4.opacityIn,
-      scale: ml4.scaleIn,
-      duration: ml4.durationIn
+      duration: ml4.durationIn,
     });
     
-      
-      
-      
-      
-      
+  }
       
       
       
@@ -961,4 +925,46 @@ const observer = new IntersectionObserver(entries => {
     
     observer.observe(document.querySelector('.ml4'));
 
+    
 
+
+
+    
+
+    const ml15observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            const square = entry.target.querySelector('.ml15-wrapper');
+       
+          
+             
+    anime.timeline({loop: false})
+    .add({
+        targets: '.ml15',
+        opacity: 0,
+        duration: 1000,
+        easing: "easeOutExpo",
+      })
+    .add({
+      targets: '.ml15 .word',
+      scale: [14,1],
+      opacity: [0,1],
+      easing: "easeOutCirc",
+      duration: 800,
+      delay: (el, i) => 800 * i
+    }).add({
+      targets: '.ml15',
+      opacity: 1,
+      duration: 1000,
+      easing: "easeOutExpo",
+      delay: 1000
+    });
+          
+    
+      //*********** */
+      if (entry.isIntersecting) {
+
+      }
+
+    });
+});
+ml15observer.observe(document.querySelector('.ml15'));
