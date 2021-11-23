@@ -67,7 +67,6 @@ jQuery(document).on('ready', function ($) {
         }
     });
    
-<<<<<<< HEAD
     anime.timeline({loop: true})
     .add({
       targets: '.ml15 .word',
@@ -83,7 +82,6 @@ jQuery(document).on('ready', function ($) {
       easing: "easeOutExpo",
       delay: 1000
     });
-=======
 
 
 
@@ -225,7 +223,6 @@ anime.timeline({loop: true})
 //   });
 
 
->>>>>>> 380ce2982b61408bc5c9ff14b84f9ede896d8f6b
 
 var ml4 = {};
 ml4.opacityIn = [0,1];
