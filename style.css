@@ -56,6 +56,7 @@ Version: 2.0
 /*---------------------------
     1. THEME BG COLOR
 -----------------------------*/
+
 .bg-white {
     background:  url("assets/img/background/white.jpg") repeat scroll 0 0;
 
@@ -3908,6 +3909,19 @@ ul.products .product img {
         background-color: #ffffff;
         box-shadow: 0 4px 40px rgba(0, 0, 0, 0.39);
     }
+    .ml4 {
+        position: relative;
+        font-weight: 900;
+        font-size: 4.5em;
+      }
+      .ml4 .letters {
+        position: absolute;
+        margin: auto;
+        left: 0;
+        top: 0.3em;
+        right: 0;
+        opacity: 0; 
+      }
 
     .cd-search-suggestions::after {
         clear: both;
@@ -4132,20 +4146,27 @@ ul.products .product img {
         visibility: visible;
     }
     .big-logo {
-    
-        max-width: 255% !important;
-        margin-left: 20px;
+        margin-right: 0 !important;
+        max-width: 200% !important;
+      
+    }
+    .floatright{
+        min-width: 100% !important;
+        max-width: 150% !important;
+        float: right;
+
+margin: 0 0 10px 10px;
     }
     .slogan-text {
 
         color: blue; 
         font-size: 20px;
         padding-bottom: 30px;
-        margin-right: 110px;
-    }
+        margin-right: 0 !important;
+  
+        }
 }
-
-@media only screen and (max-width: 992px) {
+@media (min-width: 768px) and (max-width: 991px) {
     .responsive-logo {
         margin-left: 0 !important;
     }
@@ -4157,9 +4178,30 @@ ul.products .product img {
         max-width: 150% !important;
     }
     .slogan-text {
-        margin-left: 50px;
+        color: blue; 
+        font-size: 20px;
+        padding-bottom: 30px;
+        margin-right: 0 !important;
+    }
+
+}
+
+@media only screen and (max-width: 767px) {
+    .responsive-logo {
+        margin-left: 0 !important;
+    }
+    .cd-main-header.animate-search {
+        display: none;
+    }
+    .big-logo {
+        
+        max-width: 150% !important;
+    }
+    .slogan-text {
         color: blue; 
         font-size: 10px;
+        padding-bottom: 30px;
+        margin-right: 0 !important;
     }
 }
 
@@ -4185,6 +4227,7 @@ ul.products .product img {
     font-family:Blair;
     display: flex;
     flex-direction: row-reverse;
+    float: right;
 }
 
 .container-fluid {
@@ -4207,21 +4250,93 @@ ul.products .product img {
     }
 
 
-.ml15 {
-    
-    font-family: MarkOT-Heavy ;
-    font-size: 5em;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-}
-    
-    .ml15 .word {
-    display: inline-block;
-    line-height: 1em;
-    }
+    h1.ml8 {
+        font-weight: 900;
+        font-size: 2.5em;
+        color: #fff;
+        width: 3em;
+        height: 3em;
+      }
+      
+      .ml8 .letters-container {
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        top: 0;
+        bottom: 0;
+        height: 1em;
+      }
+      
+      .ml8 .letters {
+        position: relative;
+        z-index: 2;
+        display: inline-block;
+        line-height: 0.7em;
+        right: -0.12em;
+        top: -0.2em;
+      }
+      
+      .ml8 .bang {
+        font-size: 1.4em;
+        top: auto;
+        left: -0.06em;
+      }
+      
+      .ml8 .circle {
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        top: 0;
+        bottom: 0;
+      }
+      
+      .ml8 .circle-white {
+        width: 3em;
+        height: 3em;
+        border: 2px dashed white;
+        border-radius: 2em;
+      }
+      
+      .ml8 .circle-dark {
+        width: 2.2em;
+        height: 2.2em;
+        background-color: #4f7b86;
+        border-radius: 3em;
+        z-index: 1;
+      }
+      
+      .ml8 .circle-dark-dashed {
+        border-radius: 2.4em;
+        background-color: transparent;
+        border: 2px dashed #4f7b86;
+        width: 2.3em;
+        height: 2.3em;
+      }
+ 
+    .ml15 {
+        font-weight: 800;
+        font-size: 1.8em;
+        letter-spacing: 0.1em;    
+        font-family: MarkOT-Heavy ;
+        text-align: center;
+      }
+      
+      .ml15 .word {
+        display: inline-block;
+        line-height: 0.5em;
+
+      }
 
 
     .phone-icon {
         max-width: 50px;
         max-height: 50px ;
+    }
+    #fa1{
+        float: right !important;
+    }
+    #fa2{
+        float: right !important;
     }

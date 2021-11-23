@@ -13,9 +13,13 @@
     <title>Applic - App Landing and Saas Template</title>
 
     <!--====== FAVICON ICON =======-->
+  
     <link rel="shortcut icon" type="image/ico" href="assets/img/favicon.png" />
+    <script src="https://cdn.jsdelivr.net/gh/shishirraven/animate-on-scroll@v1.0/oyethemes_onscroll_animation.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/shishirraven/animate-on-scroll@v1.2/animation_utility.css">
 
     <!--====== STYLESHEETS ======-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="assets/css/plugins.css" rel="stylesheet">
     <link href="assets/css/icons.css" rel="stylesheet">
     <link href="assets/css/typography.css" rel="stylesheet">
@@ -26,12 +30,19 @@
     <!--====== MAIN STYLESHEETS ======-->
     <link href="style.css" rel="stylesheet">
     <link href="assets/css/responsive.css" rel="stylesheet">
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
     <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
     <!--[if lt IE 9]>
         <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
         <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
+        <link
+        rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      />
+      <script src="https://cdn.jsdelivr.net/gh/shishirraven/animate-on-scroll@v1.0/oyethemes_onscroll_animation.js"></script>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/shishirraven/animate-on-scroll@v1.2/animation_utility.css">
+
 </head>
 
 <body class="overflow-xhidden" data-spy="scroll" data-target=".mainmenu-area" data-offset="90">
@@ -100,6 +111,9 @@
                 </div>
                 <nav class="navbar">
                     <div class="container">
+                        <script>
+                            AOS.init();
+                          </script>
                         <div class="row">
                             <div class="col-md-12 flex-v-center">
                                 <div class="navbar-header">
@@ -115,7 +129,7 @@
                                     <ul id="nav" class="nav navbar-nav pull-left">
                                         
                                         
-                                        <li class="active"><a href="index.html">Commander un Caroub</a>
+                                        <li class="active"><a href="index.html"  style="text-transform: none; ">Commandez un Caroub</a>
                                             <ul>
                                                 <li class="active"><a href="index.html">Home V1</a></li><!--
                                                 <li><a href="index-2.html">Home V2</a></li>
@@ -156,28 +170,27 @@
     <!--WELCOME TEXT AREA-->
     <div class="welcome-text-area font16 white">
       <div class=area-bg><div class="area-bg wow fadeInUp" ></div></div>
-        <div class="welcome-area section-padding">
-            <div class="container">
-                <div class="row flex-v-center">
-                    <div class="col-md-7 col-lg-7 col-sm-12 col-xs-12">
-                        <div class="welcome-text">
-                            <h1 class="wow fadeInUp" style="width: min(50vw, 200px); " data-wow-delay="0.8s"><a href="index.html" ><img src="assets/img/vectoriel-logo.svg" alt="logo" class="big-logo" /></a>
-                                </h1>
-                                <style>
-
-                @font-face {
-                font-family: 'Atiba';
-                 src: url('assets/fonts/Atiba.ttf');
-                                                        }
+        <div class="welcome-area section-padding"><style>   @font-face {
+                                            font-family: 'Atiba';
+                                             src: url('assets/fonts/Atiba.ttf'); }
                                 </style>
-                            <b  class="slogan-text wow fadeInUp" data-wow-delay="0.9s">Votre solution mobilité</b>
-                            <div class="home-button mt40 xs-mt40 wow fadeInUp" data-wow-delay="1.2s">
-
-                            </div>
-                        </div>
+                         
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6 " style="display: block; margin-right: 0;">
+                        
+                            <h1 class="wow fadeInUp floatright  js-scroll"   style="width: min(50vw, 200px); " data-wow-delay="0.8s">
+                                <a href="index.html" ><img src="assets/img/vectoriel-logo.svg" alt="logo"  /></a>
+                                </h1>
+                                 <b  class="slogan-text wow fadeInUp"   data-wow-delay="0.9s">Votre solution mobilité</b>
+                    </div>
+                   
+                    <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6 " style="display: block; margin-right: 0;"> 
+                         
                     </div>
                 </div>
-            </div>
+            </div> </div> </div>
+            
             <!-- <div class="welcome-layer-1 hidden-sm hidden-xs">
                 <div class="home1-layer-1 wow fadeInRight" data-wow-delay="0.5s">
                     <img src="assets/img/screenshots/screenshot-1.png" alt="">
@@ -204,20 +217,38 @@
                      src: url('assets/fonts/MarkOT-Heavy.ttf');
                                                             }</style>
       
-                    <div class="area-title sm-center xs-center">
-                        <h1 class="ml15" style="color: white;">
-                            <span class="word text-uppercase" >Société </span>
-                            <span class="word text-uppercase">100% Lausannoise</span>
-                          </h1>
+                    <div class="area-title sm-center xs-center  rubberBand scrollanimation animated">
+                    
+                        <h1 class="ml4"style="color: white">
+                            <span class="letters letters-1">Société</span></h1> <br>
+                            <h1 class="ml4"style="color: white">
+                            <span class="letters letters-2">100% Lausannoise</span></h1>
+
+                            
+                          
+                          
+                       
               <!-- <h1 class="ml2" style="font-family:Stencil Std, fantasy ; text-transform: capitalize;">Société 100% &nbsp; &nbsp;</h1> -->
                     </div>
                 </div>
-               
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
                 <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6 " >
-                    <div class="area-title sm-center xs-center wow fadeInRight" style="float: right; padding-top: 100px;">
-                        <h3  class="ml2" >COMMANDER UN <span style="font-family:atiba; color: blue;">Caroub</span> 7/7 </h3>
-                        <h2 class="ml2" style=" font-weight: bold"><img src="assets/img/background/phone.png" class="phone-icon "/>021 577 77 77</h2>
-                        <h3  class="ml2" >RESERVATION@CAROUB.CH</h3>
+                    <div class="area-title sm-center xs-center wow fadeInRight" style="float: right; ">
+                        <h1 class="ml15 scroll-element js-scroll">
+                            <span class="word" style="color: white">COMMANDEZ UN</span>
+                        
+                          </h1>
+                           
+                          <h1 class="wow fadeInRight ml15"    data-wow-delay="0.9s" style="color: white;"><span class="word" style="font-family:atiba ; font-size: 50px; color: blue;">Caroub</span>  
+                            7/7</h1>
+                        
+                            
+                          <h1 class="ml15">
+                            <span class="word" style=" color:white"><img src="assets/img/background/phone.png" class="phone-icon "/>021 577 77 77</span>
+                            <span  class="word" style="color: white;" >RESERVATION@CAROUB.CH</span>
+                          </h1>
+                          
+                        
                     </div>
                 </div>
             </div>
