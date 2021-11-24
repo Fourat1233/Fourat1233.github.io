@@ -884,9 +884,9 @@ const observer = new IntersectionObserver(entries => {
   ml4.opacityIn = [0,1];
   ml4.scaleIn = [0.2, 1];
   ml4.scaleOut = 3;
-  ml4.durationIn = 800;
-  ml4.durationOut = 600;
-  ml4.delay = 500;
+  ml4.durationIn = 500;
+  ml4.durationOut = 400;
+  ml4.delay = 150;
  
   anime.timeline({loop: false})
   .add({
@@ -905,7 +905,12 @@ const observer = new IntersectionObserver(entries => {
       scale: ml4.scaleIn,
       duration: ml4.durationIn,
     });
-    
+    var div = $("#sept");  
+   div.hide()
+    div.slideDown( "slow" );
+    $("#logo2").hide()
+    $("#logo2").slideDown("slow");
+
   }
       
       
@@ -941,7 +946,7 @@ const observer = new IntersectionObserver(entries => {
     .add({
         targets: '.ml15',
         opacity: 0,
-        duration: 1000,
+        duration: 500,
         easing: "easeOutExpo",
       })
     .add({
@@ -949,14 +954,14 @@ const observer = new IntersectionObserver(entries => {
       scale: [14,1],
       opacity: [0,1],
       easing: "easeOutCirc",
-      duration: 800,
-      delay: (el, i) => 800 * i
+      duration: 400,
+      delay: (el, i) => 100 * i
     }).add({
       targets: '.ml15',
       opacity: 1,
       duration: 1000,
       easing: "easeOutExpo",
-      delay: 1000
+      delay: 100
     });
           
     
@@ -967,4 +972,4 @@ const observer = new IntersectionObserver(entries => {
 
     });
 });
-ml15observer.observe(document.querySelector('.ml15'));
+ml15observer.observe(document.querySelector('.ml15-wrapper'));
