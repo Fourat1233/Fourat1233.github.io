@@ -866,110 +866,25 @@ jQuery(window).on('load', function () {
 
 
 
-/*------------- 
-        Intersection handler 
-        *////////////
-
-const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-        const square = entry.target.querySelector('.ml4-wrapper');
-      
-      
-      
-      
-
-  //*********** */
-  if (entry.isIntersecting) {
-  var ml4 = {};
-  ml4.opacityIn = [0,1];
-  ml4.scaleIn = [0.2, 1];
-  ml4.scaleOut = 3;
-  ml4.durationIn = 500;
-  ml4.durationOut = 400;
-  ml4.delay = 150;
- 
-  anime.timeline({loop: false})
-  .add({
-    targets: '.ml4 .letters-2',
-    opacity: 0,
-  })
-    .add({
-      targets: '.ml4 .letters-1',
-      opacity: ml4.opacityIn,
-      scale: ml4.scaleIn,
-      duration: ml4.durationIn
-    })
-    .add({
-      targets: '.ml4 .letters-2',
-      opacity: 1,
-      scale: ml4.scaleIn,
-      duration: ml4.durationIn,
-    });
-    var div = $("#sept");  
-   div.hide()
-    div.slideDown( "slow" );
-    $("#logo2").hide()
-    $("#logo2").slideDown("slow");
-
-  }
-      
-      
-      
-      
-      
-        // alert(square)
-        // if (entry.isIntersecting) {
-        // square.classList.add('adeInRight');
-        // return; // if we added the class, exit the function
-        // }
-    
-        // // We're not intersecting, so remove the class!
-        // square.classList.remove('fadeInRight');
-    });
-    });
-    
-    observer.observe(document.querySelector('.ml4'));
-
-    
 
 
-
-    
-
-    const ml15observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-            const square = entry.target.querySelector('.ml15-wrapper');
-       
-          
-             
-    anime.timeline({loop: false})
-    .add({
-        targets: '.ml15',
-        opacity: 0,
-        duration: 500,
-        easing: "easeOutExpo",
-      })
-    .add({
-      targets: '.ml15 .word',
-      scale: [14,1],
-      opacity: [0,1],
-      easing: "easeOutCirc",
-      duration: 400,
-      delay: (el, i) => 100 * i
-    }).add({
-      targets: '.ml15',
-      opacity: 1,
-      duration: 1000,
-      easing: "easeOutExpo",
-      delay: 100
-    });
-          
-    
-      //*********** */
-      if (entry.isIntersecting) {
-
-      }
-
-    });
-});
-ml15observer.observe(document.querySelector('.ml15-wrapper'));
+        let didScroll = false;
+        let paralaxTitles = document.querySelectorAll('.paralax-title');
+        
+        const scrollInProgress = () => {
+            didScroll = true
+        }
+        
+        const raf = () => {
+            if(didScroll) {
+                paralaxTitles.forEach((element, index) => {
+                    element.style.transform = "translateX(-"+ window.scrollY / 10 + "%)"
+                })
+                didScroll = false;
+            }
+            requestAnimationFrame(raf);
+        }
+        
+        
+        requestAnimationFrame(raf);
+        window.addEventListener('scroll', scrollInProgress)

@@ -109,7 +109,9 @@ header {
 
 }
 
-
+body{
+    overflow: hidden;
+}
 .area-image-content,
 .area-content {
     position: relative;
@@ -4339,17 +4341,7 @@ margin: 0 0 10px 10px;
         height: 2.3em;
       }
  
-    .ml15 {
-  
-       
-      }
-      
-      .ml15 .word {
-        display: inline-block;
-       
-
-      }
-
+ 
 
     .phone-icon {
         max-width: 50px;
@@ -4363,3 +4355,20 @@ margin: 0 0 10px 10px;
     }
 
 
+
+
+
+    
+
+.transition-axe {
+
+	transform: translateY(50%);
+	z-index: 1;
+	white-space: nowrap;
+	
+	
+}
+.paralax-title {
+    position: relative;
+    display: block;
+}
